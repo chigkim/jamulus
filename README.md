@@ -1,7 +1,7 @@
 # Jamulus Accessible Build
-This is a modified version of [corrados/jamulus](https://github.com/corrados/jamulus).
+This is a modified version of [corrados/jamulus.](https://github.com/corrados/jamulus)
 
-You can [download alpha.1 for Mac](https://github.com/chigkim/jamulus/releases/download/VO-Alpha.1/Jamulus-Mac-Accessible.zip).
+You can [download alpha.1 for Mac.](https://github.com/chigkim/jamulus/releases/download/VO-Alpha.1/Jamulus-Mac-Accessible.zip)
 
 The original readme is below.
 
