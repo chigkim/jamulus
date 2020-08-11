@@ -4,11 +4,9 @@ This is a modified version of [corrados/jamulus.](https://github.com/corrados/ja
 ## Download 
 This is an unsigned app. If right clicking and choosing open doesn't work, you might need to [dequarantine the app.](https://derflounder.wordpress.com/2012/11/20/clearing-the-quarantine-extended-attribute-from-downloaded-applications/)
 
-You can [download alpha.1 for Mac.](https://github.com/chigkim/jamulus/releases/download/VO-Alpha.1/Jamulus-Mac-Accessible.zip)
+[Download alpha.1 for Mac.](https://github.com/chigkim/jamulus/releases/download/VO-Alpha.1/Jamulus-Mac-Accessible.zip)
 
-## Changes
-The following features became accessible on Mac with VoiceOver.
-
+## Accessibility Fixes
 * User info
 * Currently connected server name
 * Sound alert when someone joins/leaves
