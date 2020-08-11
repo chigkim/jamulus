@@ -1,9 +1,24 @@
 # Jamulus Accessible Build
 This is a modified version of [corrados/jamulus.](https://github.com/corrados/jamulus)
 
+## Download 
+This is an unsigned app. If right clicking and choosing open doesn't work, you might need to [dequarantine the app.](https://derflounder.wordpress.com/2012/11/20/clearing-the-quarantine-extended-attribute-from-downloaded-applications/)
+
 You can [download alpha.1 for Mac.](https://github.com/chigkim/jamulus/releases/download/VO-Alpha.1/Jamulus-Mac-Accessible.zip)
 
-The original readme is below.
+## Changes
+The following features became accessible on Mac with VoiceOver.
+
+* User info
+* Currently connected server name
+* Sound alert when someone joins/leaves
+* Sound alert for new message
+* Delay indicator
+* Buffer indicator
+* Pan value
+* Server List
+
+## Original README
 
 ![Homepage picture](src/res/homepage/jamulusbannersmall.png)
 
