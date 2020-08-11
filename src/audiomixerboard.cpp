@@ -713,19 +713,24 @@ void CChannelFader::SetChannelInfos ( const CChannelInfo& cChanInfo )
     QString strToolTip = "";
 
     // alias/name
+    QString accessibleAlias = "";
     if ( !cChanInfo.strName.isEmpty() )
     {
         strToolTip += "<h4>" + tr ( "Alias/Name" ) + "</h4>" + cChanInfo.strName;
+        accessibleAlias += cChanInfo.strName;
     }
 
     // instrument
+    QString accessibleInstrument = "";
     if ( !CInstPictures::IsNotUsedInstrument ( iTTInstrument ) )
     {
         strToolTip += "<h4>" + tr ( "Instrument" ) + "</h4>" +
             CInstPictures::GetName ( iTTInstrument );
+            accessibleInstrument += CInstPictures::GetName ( iTTInstrument );
     }
 
     // location
+    QString accessibleLocation = "";
     if ( ( eTTCountry != QLocale::AnyCountry ) ||
          ( !cChanInfo.strCity.isEmpty() ) )
     {
@@ -734,16 +739,19 @@ void CChannelFader::SetChannelInfos ( const CChannelInfo& cChanInfo )
         if ( !cChanInfo.strCity.isEmpty() )
         {
             strToolTip += cChanInfo.strCity;
+            accessibleLocation += cChanInfo.strCity;
 
             if ( eTTCountry != QLocale::AnyCountry )
             {
                 strToolTip += ", ";
+                accessibleLocation += ", ";
             }
         }
 
         if ( eTTCountry != QLocale::AnyCountry )
         {
             strToolTip += QLocale::countryToString ( eTTCountry );
+            accessibleLocation += QLocale::countryToString ( eTTCountry );
         }
     }
 
@@ -752,14 +760,17 @@ void CChannelFader::SetChannelInfos ( const CChannelInfo& cChanInfo )
     {
     case SL_BEGINNER:
         strToolTip += "<h4>" + tr ( "Skill Level" ) + "</h4>" + tr ( "Beginner" );
+        accessibleInstrument += ", Beginner";
         break;
 
     case SL_INTERMEDIATE:
         strToolTip += "<h4>" + tr ( "Skill Level" ) + "</h4>" + tr ( "Intermediate" );
+        accessibleInstrument += ", Intermediate";
         break;
 
     case SL_PROFESSIONAL:
         strToolTip += "<h4>" + tr ( "Skill Level" ) + "</h4>" + tr ( "Expert" );
+        accessibleInstrument += ", Expert";
         break;
 
     case SL_NOT_SET:
@@ -774,8 +785,12 @@ void CChannelFader::SetChannelInfos ( const CChannelInfo& cChanInfo )
     }
 
     plblCountryFlag->setToolTip ( strToolTip );
+    plblCountryFlag->setAccessibleDescription(accessibleLocation);
     plblInstrument->setToolTip  ( strToolTip );
+plblInstrument->setAccessibleDescription ( accessibleInstrument );
     plblLabel->setToolTip       ( strToolTip );
+    plblLabel->setAccessibleName(accessibleAlias);
+    plblLabel->setAccessibleDescription("Alias");
 }
 
 
