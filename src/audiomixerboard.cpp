@@ -23,7 +23,7 @@
 \******************************************************************************/
 
 #include "audiomixerboard.h"
-
+#include <QSound>
 
 /******************************************************************************\
 * CChanneFader                                                                 *
@@ -1074,6 +1074,7 @@ void CAudioMixerBoard::ApplyNewConClientList ( CVector<CChannelInfo>& vecChanInf
 
     // get number of connected clients
     const int iNumConnectedClients = vecChanInfo.Size();
+    QSound::play(":sounds/res/sounds/new_user.wav");
 
     // search for channels with are already present and preserve their gain
     // setting, for all other channels reset gain
