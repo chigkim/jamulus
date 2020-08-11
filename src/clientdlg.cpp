@@ -23,6 +23,7 @@
 \******************************************************************************/
 
 #include "clientdlg.h"
+#include <QSound>
 
 /* Implementation *************************************************************/
 CClientDlg::CClientDlg ( CClient*         pNCliP,
@@ -800,6 +801,7 @@ void CClientDlg::OnCLVersionAndOSReceived ( CHostAddress, COSUtil::EOpSystemType
 
 void CClientDlg::OnChatTextReceived ( QString strChatText )
 {
+    QSound::play(":sounds/res/sounds/new_message.wav");
     ChatDlg.AddChatText ( strChatText );
 
     // Open chat dialog. If a server welcome message is received, we force
