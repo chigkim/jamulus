@@ -420,6 +420,12 @@ void CConnectDlg::SetServerList ( const CHostAddress& InetAddr, const CVector<CS
         {
             lvwServers->expandItem ( pNewListViewItem );
         }
+
+        // accessibility
+        for (int i=0; i<lvwServers->columnCount(); i++) {
+            lvwServers->setItemWidget(pNewListViewItem, i, new QPushButton(pNewListViewItem->text(i)));
+        }
+
     }
 
     // immediately issue the ping measurements and start the ping timer since
@@ -836,6 +842,8 @@ void CConnectDlg::SetPingTimeAndNumClientsResult ( const CHostAddress& InetAddr,
     // we may have changed the Hidden state for some items, if a filter was active, we now
     // have to update it to void lines appear which do not satisfy the filter criteria
     UpdateListFilter();
+    dynamic_cast<QPushButton*>(lvwServers->itemWidget(pCurListViewItem,1))->setText(pCurListViewItem->text(1));
+    dynamic_cast<QPushButton*>(lvwServers->itemWidget(pCurListViewItem, 2))->setText(pCurListViewItem->text(2));
 }
 
 QTreeWidgetItem* CConnectDlg::FindListViewItem ( const CHostAddress& InetAddr )
