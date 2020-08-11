@@ -19,6 +19,7 @@ contains(CONFIG, "headless") {
     QT -= gui
 } else {
     QT += widgets
+    QT += multimedia
 }
 
 TRANSLATIONS = src/res/translation/translation_de_DE.ts \
