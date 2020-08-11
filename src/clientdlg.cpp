@@ -23,7 +23,7 @@
 \******************************************************************************/
 
 #include "clientdlg.h"
-
+#include <QSound>
 
 /* Implementation *************************************************************/
 CClientDlg::CClientDlg ( CClient*         pNCliP,
@@ -737,6 +737,7 @@ void CClientDlg::OnVersionAndOSReceived ( COSUtil::EOpSystemType ,
 
 void CClientDlg::OnChatTextReceived ( QString strChatText )
 {
+    QSound::play(":sounds/res/sounds/new_message.wav");
     ChatDlg.AddChatText ( strChatText );
 
     // open window (note that we do not want to force the dialog to be upfront
