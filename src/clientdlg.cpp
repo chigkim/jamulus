@@ -220,6 +220,8 @@ CClientDlg::CClientDlg ( CClient*         pNCliP,
 
     // set window title (with no clients connected -> "0")
     SetMyWindowTitle ( 0 );
+    // Set number of clients to track
+    iClients = 0;
 
     // prepare Mute Myself info label (invisible by default)
     lblGlobalInfoLabel->setStyleSheet ( ".QLabel { background: red; }" );
@@ -790,6 +792,12 @@ void CClientDlg::OnConClientListMesReceived ( CVector<CChannelInfo> vecChanInfo 
 
 void CClientDlg::OnNumClientsChanged ( int iNewNumClients )
 {
+    if (iNewNumClients > iClients)
+    {
+        QSound::play(":sounds/res/sounds/new_user.wav");
+    }
+    iClients = iNewNumClients;
+
     // update window title
     SetMyWindowTitle ( iNewNumClients );
 }
