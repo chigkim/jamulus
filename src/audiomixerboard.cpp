@@ -23,7 +23,6 @@
 \******************************************************************************/
 
 #include "audiomixerboard.h"
-#include <QSound>
 
 
 /******************************************************************************\
@@ -1120,7 +1119,6 @@ void CAudioMixerBoard::ApplyNewConClientList ( CVector<CChannelInfo>& vecChanInf
 {
     // get number of connected clients
     const int iNumConnectedClients = vecChanInfo.Size();
-    QSound::play(":sounds/res/sounds/new_user.wav");
 
     Mutex.lock();
     {
