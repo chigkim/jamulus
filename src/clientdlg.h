@@ -98,6 +98,7 @@ protected:
 
     CClient*           pClient;
     CClientSettings*   pSettings;
+    int iClients;
 
     bool               bConnected;
     bool               bConnectDlgWasShown;
