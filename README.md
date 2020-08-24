@@ -4,9 +4,10 @@ This is a modified version of [corrados/jamulus.](https://github.com/corrados/ja
 ## Download 
 This is an unsigned app. If right clicking and choosing open doesn't work, you might need to [dequarantine the app.](https://derflounder.wordpress.com/2012/11/20/clearing-the-quarantine-extended-attribute-from-downloaded-applications/)
 
-[Download alpha.2 for Mac.](https://github.com/chigkim/jamulus/releases/download/vo-alpha.2/Jamulus-accessible-mac-alpha.2.zip)
+[Download alpha.3 for Mac](https://github.com/chigkim/jamulus/releases/download/alpha.3/Jamulus.zip) released on 08/23/2020.
 
 ## Accessibility Fixes
+* Crash when changing genre rapidly
 * Cleanup connect/disconnect button
 * User info
 * Currently connected server name
