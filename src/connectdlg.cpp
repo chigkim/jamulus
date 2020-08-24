@@ -771,6 +771,7 @@ void CConnectDlg::SetPingTimeAndNumClientsResult ( const CHostAddress& InetAddr,
             pCurListViewItem->
                 setText ( 1, QString ( "%1 ms" ).arg ( iMinPingTime, 4, 10, QLatin1Char ( ' ' ) ) );
         }
+        dynamic_cast<QPushButton*>(lvwServers->itemWidget(pCurListViewItem,1))->setText(pCurListViewItem->text(1));
 
         // update number of clients text
         if ( iNumClients >= pCurListViewItem->text ( 5 ).toInt() )
@@ -783,6 +784,7 @@ void CConnectDlg::SetPingTimeAndNumClientsResult ( const CHostAddress& InetAddr,
             pCurListViewItem->
                 setText ( 2, QString().setNum ( iNumClients ) + "/" + pCurListViewItem->text ( 5 ) );
         }
+        dynamic_cast<QPushButton*>(lvwServers->itemWidget(pCurListViewItem, 2))->setText(pCurListViewItem->text(2));
 
         // check if the number of child list items matches the number of
         // connected clients, if not then request the client names
@@ -829,8 +831,6 @@ void CConnectDlg::SetPingTimeAndNumClientsResult ( const CHostAddress& InetAddr,
     // we may have changed the Hidden state for some items, if a filter was active, we now
     // have to update it to void lines appear which do not satisfy the filter criteria
     UpdateListFilter();
-    dynamic_cast<QPushButton*>(lvwServers->itemWidget(pCurListViewItem,1))->setText(pCurListViewItem->text(1));
-    dynamic_cast<QPushButton*>(lvwServers->itemWidget(pCurListViewItem, 2))->setText(pCurListViewItem->text(2));
 }
 
 QTreeWidgetItem* CConnectDlg::FindListViewItem ( const CHostAddress& InetAddr )
