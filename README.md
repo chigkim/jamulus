@@ -1,4 +1,4 @@
-# Jamulus Accessible Build
+# Jamulus Accessible Build For VoiceOver on Mac
 This is a modified version of [corrados/jamulus.](https://github.com/corrados/jamulus)
 
 ## Download 
