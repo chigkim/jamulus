@@ -124,6 +124,7 @@ void CChatDlg::AddChatText ( QString strChatText )
         strChatText.replace ( QRegExp ( "(https?://\\S+)" ), "<a href=\"\\1\">\\1</a>" );
     }
 
+
     // add new text in chat window
     txvChatWindow->append ( strChatText );
 }
