@@ -820,6 +820,7 @@ void CChannelFader::SetChannelInfos ( const CChannelInfo& cChanInfo )
     plblLabel->setToolTip                     ( strToolTip );
     plblLabel->setAccessibleName              ( strAliasAccessible );
     plblLabel->setAccessibleDescription       ( tr ( "Alias" ) );
+    dynamic_cast<QWidget*>(plblLabel->parent())->setAccessibleName(strAliasAccessible+", "+strInstrumentAccessible+", "+strLocationAccessible);
 }
 
 
