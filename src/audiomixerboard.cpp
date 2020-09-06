@@ -823,6 +823,9 @@ void CChannelFader::SetChannelInfos ( const CChannelInfo& cChanInfo )
     plblLabel->setAccessibleName ( strAliasAccessible );
     plblLabel->setAccessibleDescription ( tr ( "Alias" ) );
     dynamic_cast<QWidget*>(plblLabel->parent())->setAccessibleName(strAliasAccessible+", "+strInstrumentAccessible+", "+strLocationAccessible);
+    pcbMute->setAccessibleName("Mute "+strAliasAccessible+", "+strInstrumentAccessible);
+    pcbSolo->setAccessibleName("Solo "+strAliasAccessible+", "+strInstrumentAccessible);
+    pcbGroup->setAccessibleName("Group "+strAliasAccessible+", "+strInstrumentAccessible);
 }
 
 /******************************************************************************\
