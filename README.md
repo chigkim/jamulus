@@ -2,11 +2,15 @@
 This is a modified version of [corrados/jamulus.](https://github.com/corrados/jamulus)
 
 ## Download 
-This is an unsigned app. If right clicking and choosing open doesn't work, you might need to [dequarantine the app.](https://derflounder.wordpress.com/2012/11/20/clearing-the-quarantine-extended-attribute-from-downloaded-applications/)
+Alpha.5 released on 09/06/2020.
 
-[Download alpha.4 for Mac](https://github.com/chigkim/jamulus/releases/download/alpha.4/Jamulus.zip) released on 08/24/2020.
+* [Mac](https://github.com/chigkim/jamulus/releases/download/alpha.5/Jamulus-Accessible-Mac.zip)
+* [Windows](https://github.com/chigkim/jamulus/releases/download/alpha.5/Jamulus-Accessible-Win.zip) released on 09/06/2020.
+
+Mac Users, this is an unsigned app. If right clicking and choosing open doesn't work, you might need to [dequarantine the app.](https://derflounder.wordpress.com/2012/11/20/clearing-the-quarantine-extended-attribute-from-downloaded-applications/)
 
 ## Accessibility Fixes
+* Added alias and instrument to mute, solo, group buttons.
 * Fixed bug to play sound when changing profile
 * Crash when changing genre rapidly
 * Cleanup connect/disconnect button
