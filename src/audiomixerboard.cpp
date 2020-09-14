@@ -1095,7 +1095,9 @@ void CAudioMixerBoard::ApplyNewConClientList ( CVector<CChannelInfo>& vecChanInf
                     if ( i == iMyChannelID )
                     {
                         vecpChanFader[i]->SetIsMyOwnFader();
+                    vecpChanFader[i]->SetFaderLevel ( 0.0 );
                     }
+                    vecpChanFader[i]->SetFaderLevel ( 20.0 / 100.0 * AUD_MIX_FADER_MAX );
 
                     // show fader
                     vecpChanFader[i]->Show();
@@ -1107,7 +1109,7 @@ void CAudioMixerBoard::ApplyNewConClientList ( CVector<CChannelInfo>& vecChanInf
                     // we can adjust the level even if no fader was visible.
                     // The fader level of 100 % is the default in the
                     // server, in that case we do not have to do anything here.
-                    if ( ( !bNoFaderVisible ||
+                    if ( (
                            ( ( iMyChannelID != INVALID_INDEX ) && ( iMyChannelID != i ) ) ) &&
                          ( pSettings->iNewClientFaderLevel != 100 ) )
                     {
