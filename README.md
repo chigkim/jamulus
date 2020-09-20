@@ -1,15 +1,16 @@
-# Jamulus Accessible Build For VoiceOver on Mac
+# Jamulus Accessible Build
 This is a modified version of [corrados/jamulus.](https://github.com/corrados/jamulus)
 
 ## Download 
-Alpha.5 released on 09/06/2020.
+Build Released on 09/19/2020.
 
-* [Mac](https://github.com/chigkim/jamulus/releases/download/alpha.5/Jamulus-Accessible-Mac.zip)
-* [Windows](https://github.com/chigkim/jamulus/releases/download/alpha.5/Jamulus-Accessible-Win.zip) released on 09/06/2020.
+* [Mac](https://github.com/chigkim/jamulus/releases/download/Alpha.6/Jamulus-Accessible-Mac.zip)
+* [Windows](https://github.com/chigkim/jamulus/releases/download/Alpha.6/Jamulus-Accessible-Win.zip)
 
 Mac Users, this is an unsigned app. If right clicking and choosing open doesn't work, you might need to [dequarantine the app.](https://derflounder.wordpress.com/2012/11/20/clearing-the-quarantine-extended-attribute-from-downloaded-applications/)
 
-## Accessibility Fixes
+## Changelogs
+* Incorporated the master branch from Corrados on 09/19/2020.
 * Added alias and instrument to mute, solo, group buttons.
 * Fixed bug to play sound when changing profile
 * Crash when changing genre rapidly
