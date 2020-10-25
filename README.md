@@ -2,10 +2,10 @@
 This is a modified version of [corrados/jamulus.](https://github.com/corrados/jamulus)
 
 ## Download 
-Build Released on 10/18/2020.
+Build Released on 10/25/2020.
 
-* [Mac](https://github.com/chigkim/jamulus/releases/download/alpha.7/Jamulus-Accessible-Mac.zip)
-* [Windows](https://github.com/chigkim/jamulus/releases/download/alpha.7/Jamulus-Accessible-Win.zip)
+* [Mac](https://github.com/chigkim/jamulus/releases/download/alpha.8/Jamulus-Accessible-Mac.zip)
+* [Windows](https://github.com/chigkim/jamulus/releases/download/alpha.8/Jamulus-Accessible-Win.zip)
 
 Mac Users, this is an unsigned app. If right clicking and choosing open doesn't work, you might need to [dequarantine the app.](https://derflounder.wordpress.com/2012/11/20/clearing-the-quarantine-extended-attribute-from-downloaded-applications/)
 
