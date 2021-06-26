@@ -2,15 +2,15 @@
 This is a modified version of [jamulussoftware/jamulus.](https://github.com/jamulussoftware/jamulus)
 
 ## Download 
-Build Released on 03/17/2021.
+Build Released on 06/26/2021.
 
-* [Mac](https://github.com/chigkim/jamulus/releases/download/alpha.11/Jamulus-r3_7_0-Accessible-Mac.zip)
-* [Windows](https://github.com/chigkim/jamulus/releases/download/alpha.11/Jamulus-r3_7_0-Accessible-Win.zip)
+* [Mac](https://github.com/chigkim/jamulus/releases/download/Alpha.12/Jamulus_Accessible_Mac_r3_8_0.zip)
+* [Windows](https://github.com/chigkim/jamulus/releases/download/Alpha.12/Jamulus_Accessible_Win_R3_8_0.zip)
 
 Mac Users, this is an unsigned app. If right clicking and choosing open doesn't work, you might need to [dequarantine the app.](https://derflounder.wordpress.com/2012/11/20/clearing-the-quarantine-extended-attribute-from-downloaded-applications/)
 
 ## Changelogs
-* Changes from [jamulussoftware/jamulus.](https://github.com/jamulussoftware/jamulus/commits/r3_7_0/)
+* Changes from [jamulussoftware/jamulus.](https://github.com/jamulussoftware/jamulus/commits/r3_8_0/)
 * Added alias and instrument to mute, solo, group buttons.
 * Fixed bug to play sound when changing profile
 * Crash when changing genre rapidly
